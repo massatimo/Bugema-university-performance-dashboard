@@ -1,0 +1,12 @@
+<!-- Simple BU logo (SVG) - save as src/assets/logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#1565c0"/>
+      <stop offset="1" stop-color="#42a5f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="20" fill="url(#g)"/>
+  <text x="50%" y="55%" text-anchor="middle" font-size="60" font-family="Poppins, sans-serif" font-weight="700" fill="#fff">BU</text>
+  <text x="50%" y="85%" text-anchor="middle" font-size="14" font-family="Poppins, sans-serif" fill="rgba(255,255,255,0.9)">Bugema</text>
+</svg>

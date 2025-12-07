@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "password123",
+      "name": "Admin User",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "staff",
+      "password": "staffpass",
+      "name": "Staff User",
+      "role": "staff"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Kato",
+      "studentId": "BUG-1001",
+      "course": "Computer Science",
+      "gpa": 3.7,
+      "status": "active",
+      "email": "alice.kato@bugema.ac.ug",
+      "phone": "0700000001",
+      "courses": [
+        {
+          "code": "CS101",
+          "name": "Intro to CS",
+          "grade": 3.6
+        },
+        {
+          "code": "CS201",
+          "name": "Data Structures",
+          "grade": 3.8
+        },
+        {
+          "code": "CS301",
+          "name": "Algorithms",
+          "grade": 3.7
+        }
+      ],
+      "gpaHistory": [
+        3.2,
+        3.4,
+        3.6,
+        3.7
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Brian",
+      "lastName": "Mugisha",
+      "studentId": "BUG-1002",
+      "course": "Business Administration",
+      "gpa": 2.1,
+      "status": "probation",
+      "email": "brian.m@bugema.ac.ug",
+      "phone": "0700000002",
+      "courses": [
+        {
+          "code": "BA101",
+          "name": "Intro to BA",
+          "grade": 2.3
+        },
+        {
+          "code": "BA201",
+          "name": "Marketing",
+          "grade": 2
+        }
+      ],
+      "gpaHistory": [
+        2.8,
+        2.5,
+        2.2,
+        2.1
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Catherine",
+      "lastName": "Nabbanja",
+      "studentId": "BUG-1003",
+      "course": "Computer Science",
+      "gpa": 3.9,
+      "status": "active",
+      "email": "catherine.n@bugema.ac.ug",
+      "phone": "0700000003",
+      "courses": [
+        {
+          "code": "CS101",
+          "name": "Intro to CS",
+          "grade": 4
+        },
+        {
+          "code": "CS201",
+          "name": "Data Structures",
+          "grade": 3.8
+        }
+      ],
+      "gpaHistory": [
+        3.5,
+        3.7,
+        3.8,
+        3.9
+      ]
+    },
+    {
+      "firstName": "Masai",
+      "lastName": "Timothy",
+      "studentId": "BUG-1005",
+      "course": "BIT",
+      "gpa": 3.5,
+      "status": "probation",
+      "email": "massatimo@gmail.com",
+      "phone": "0774793126",
+      "courses": [],
+      "gpaHistory": [
+        3.5
+      ],
+      "id": 4
+    },
+    {
+      "firstName": "Masai",
+      "lastName": "Tim",
+      "studentId": "BUG-1003",
+      "course": "Ms Software",
+      "gpa": 3.6,
+      "status": "active",
+      "email": "massatimo@gmail.com",
+      "phone": "07454564848",
+      "courses": [],
+      "gpaHistory": [
+        3.6
+      ],
+      "id": 5
+    }
+  ]
+}

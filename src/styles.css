@@ -1,0 +1,135 @@
+/* Global styles, font and banner/footer styling */
+:root {
+  --banner-height: 180px;
+  --banner-bg-opacity: 0.06;
+  --primary-color: #00695c; /* deeper teal - new color scheme */
+  --accent-color: #00897b;
+  --title-weight: 800;
+}
+
+/* Apply chosen font globally */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0,0,0,0.87);
+  background-color: #fafafa;
+}
+
+/* Banner styling (HeaderBanner component uses inline background but this sets defaults) */
+.header-banner {
+  height: var(--banner-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  background: linear-gradient(90deg, rgba(0,105,92,0.06), rgba(4,125,87,0.02));
+}
+
+/* Banner title text */
+.header-banner__title {
+  z-index: 2;
+  color: var(--primary-color);
+  font-weight: var(--title-weight);
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+/* Optional subline (small) */
+.header-banner__sub {
+  z-index: 2;
+  color: rgba(0,0,0,0.55);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* watermark (SVG) inside banner */
+.header-banner__watermark {
+  position: absolute;
+  right: -10%;
+  top: -8%;
+  width: 60%;
+  height: auto;
+  opacity: var(--banner-bg-opacity);
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+/* Footer styling (placed at bottom of layout) */
+.app-footer {
+  margin-top: 32px;
+  padding: 12px 16px;
+  text-align: center;
+  color: rgba(0,0,0,0.6);
+  font-size: 13px;
+}
+
+/* Make sure main content has comfortable spacing on small screens */
+@media (max-width: 600px) {
+  .header-banner__title { font-size: 22px; }
+  .header-banner { height: 120px; }
+}
+
+/* ----- Login page styles ----- */
+.login-container {
+  min-height: calc(100vh - 0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 14px;
+  background: linear-gradient(180deg, rgba(0,105,92,0.02) 0%, rgba(255,255,255,0.0) 100%);
+}
+
+.login-card {
+  border-radius: 14px;
+  box-shadow: 0 10px 34px rgba(2,6,23,0.10);
+  background: #ffffff;
+}
+
+/* Bigger, bolder title */
+.login-title {
+  font-weight: 800;
+  font-size: 34px;
+  letter-spacing: 1.2px;
+  margin-top: 14px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+/* subtitle */
+.login-subtitle {
+  margin-top: 6px;
+  font-size: 15px;
+  color: rgba(0,0,0,0.64);
+}
+
+/* Card inner spacing larger */
+.login-card .MuiFormControl-root {
+  margin-top: 6px;
+}
+
+/* inputs larger font */
+.login-card .MuiInputBase-input {
+  font-size: 16px;
+}
+
+/* Login footer */
+.login-footer {
+  margin-top: 20px;
+  color: rgba(0,0,0,0.6);
+  font-size: 13px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .login-title { font-size: 22px; }
+  .login-card { padding: 20px !important; }
+  .login-container { padding: 24px 10px; }
+}

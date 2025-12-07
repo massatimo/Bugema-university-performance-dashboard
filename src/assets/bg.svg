@@ -1,0 +1,11 @@
+<!-- Watermark SVG (save as src/assets/bg.svg) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0" stop-color="#1976d2"/>
+      <stop offset="1" stop-color="#4fc3f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="20" fill="url(#g2)"/>
+  <text x="50%" y="55%" text-anchor="middle" font-size="60" font-family="Poppins, sans-serif" font-weight="700" fill="#fff" opacity="0.95">BU</text>
+</svg>
